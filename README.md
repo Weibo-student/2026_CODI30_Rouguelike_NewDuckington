@@ -1,5 +1,5 @@
 # 2026_CODI30_Roguelike_NewDuckington
-## Feature List:
+## Feature list:
 1. Enemy spawns (room-based)
 2. ~~Timer~~
 3. Linear world
@@ -23,5 +23,21 @@
 - Room system
 - Encounter chance
 - Rewards
-- Basic actions (search, travel)
+- Basic actions (search, travel, interact)
 - Combat actions (attack, flee, interact, item, and maybe block?)
+- Script should be a while loop
+## Task list:
+- Create main loop that prompts for input and handles if invalid input is provided
+- Room system
+    - travelling between different rooms
+    - what happens in each room
+    - randomized room layout
+- Basic combat system
+    - player turn/actions
+    - enemy turn/actions
+    - hp stat, attack stat
+    - what happens when you win/lose
+- Inventory system
+    - saving inventory
+    - using items and gaining items
+- Currency and shops
