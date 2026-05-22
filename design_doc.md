@@ -86,13 +86,18 @@ It's a text-based rogue-like RPG with a turn based combat system.
     - Stats scale with level, you get ~1/level stat points to allocate specifically to individual stats to create different builds
 
 
-## Story / Theme
+## Story
 
 It's a rogue-like game set in a world where ducks and bears are at war. There is an organization called New Duckington beside a pond known as Whispering Waters. Ducks from all around the world gathered there to form an alliance against the bears.
 
 The bears, being unorganized, failed in their attempts to attack the alliance. However, one bear rose above the others and formed a pact with a dragon. Together, they launched a devastating assault that massacred the ducks of Whispering Waters.
 
 You play as one of the few surviving ducks, driven by vengeance and determined to hunt down the bear and dragon duo responsible for the destruction.
+
+## Progression of Events
+
+Magic asteriod lands and the ducks race the bears (and win; cannot advance if the duck loses the race). The ducks gain superpowers from the asteroid. 
+Ducks storm the Bear castle and fight for vengeance 
 
 ## Concept
 - Turn-based
