@@ -15,7 +15,7 @@ ROOM_ENCOUNTER="You push open the door. A bear soldier stands with its back to y
 # PART 3: Which enemy this room spawns
 # room_manager will look for this file inside data/enemies/
 # ─────────────────────────────────────────
-ROOM_ENEMY="bear_grunt.sh"
+ROOM_ENEMY="enemy_example.sh"
 
 # ─────────────────────────────────────────
 # PART 4: Bonus rewards after combat
