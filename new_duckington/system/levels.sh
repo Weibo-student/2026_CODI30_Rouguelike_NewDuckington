@@ -8,7 +8,7 @@
 # Load saved player variables from GAME_ROOT/data/ into the shell.
 load_player_data(){
     # shellcheck disable=SC1090
-    source "$GAME_ROOT/data/" # WHERE PLAYER DATA FILES ARE STORED - ADJUST AS NEEDED!!!!!!
+    source "$GAME_ROOT/data/player_data.sh" # WHERE PLAYER DATA FILES ARE STORED - ADJUST AS NEEDED!!!!!!
 }
 
 ## levels_xp_for_next_level(level)
@@ -37,9 +37,22 @@ levels_sync_progression() {
 
 ## levels_level_up()
 # Apply a single level-up: increment level, grant stat point, update threshold.
+# Also apply a small base stat bonus on level-up: +1 to most stats, +0.1 to luck.
 levels_level_up() {
     PLAYER_LEVEL=$((PLAYER_LEVEL + 1))
     PLAYER_STAT_POINTS=$((PLAYER_STAT_POINTS + 1))
+
+    # Base level bonuses (apply immediately on level-up):
+    PLAYER_HP_MAX=$(( ${PLAYER_HP_MAX:-0} + 1 ))
+    PLAYER_HP=$(( ${PLAYER_HP:-0} + 1 ))
+    PLAYER_ATK=$(( ${PLAYER_ATK:-0} + 1 ))
+    PLAYER_DEF=$(( ${PLAYER_DEF:-0} + 1 ))
+    PLAYER_NRG_MAX=$(( ${PLAYER_NRG_MAX:-0} + 1 ))
+    PLAYER_NRG=$(( ${PLAYER_NRG:-0} + 1 ))
+    PLAYER_SPD=$(( ${PLAYER_SPD:-0} + 1 ))
+    # Increase luck by 0.1 (store as decimal string). Use awk to preserve one decimal.
+    PLAYER_LCK=$(awk "BEGIN{printf \"%.1f\", (${PLAYER_LCK:-0} + 0.1)}")
+
     PLAYER_XP_NEXT="$(levels_xp_for_next_level "$PLAYER_LEVEL")"
 }
 
