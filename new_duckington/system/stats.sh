@@ -35,3 +35,45 @@ PLAYER_ITEMS="$PLAYER_ITEMS"
 PLAYER_SKILL_CARDS="$PLAYER_SKILL_CARDS"
 EOF
 }
+
+display_player_stats() {
+    echo "╔══════════════════════════════╗"
+    echo "║       PLAYER  STATS          ║"
+    echo "╠══════════════════════════════╣"
+    printf "║  LVL: %3d   XP: %5d/%-5d  ║\n" "$PLAYER_LEVEL" "$PLAYER_XP" "$PLAYER_XP_NEXT"
+    printf "║  HP : %5d/%-5d            ║\n" "$PLAYER_HP" "$PLAYER_HP_MAX"
+    printf "║  NRG: %5d/%-5d            ║\n" "$PLAYER_NRG" "$PLAYER_NRG_MAX"
+    printf "║  ATK: %3d   DEF: %3d         ║\n" "$PLAYER_ATK" "$PLAYER_DEF"
+    printf "║  SPD: %3d   LCK: %3d%%        ║\n" "$PLAYER_SPD" "$PLAYER_LCK"
+    echo "╚══════════════════════════════╝"
+}
+
+display_player_equipment() {
+    echo "╔══════════════════════════════╗"
+    echo "║       PLAYER  EQUIPMENT      ║"
+    echo "╠══════════════════════════════╣"
+    printf "║  WEAPON: %-19s ║\n" "$PLAYER_WEAPON"
+    printf "║  ARMOR : %-19s ║\n" "$PLAYER_ARMOR"
+    printf "║  HAT   : %-19s ║\n" "$PLAYER_HAT"
+    echo "╚══════════════════════════════╝"
+}
+
+display_player_items() {
+    echo "╔═══════════════════════════════════════════╗"
+    echo "║              PLAYER  ITEMS                ║"
+    echo "╠═══════════════════════════════════════════╣"
+    printf "║  Items: %-33s ║\n" "$PLAYER_ITEMS"
+    echo "║  Type the command 'show_item [item name]' ║"
+    echo "║  to see the details of an item.           ║"
+    echo "╚═══════════════════════════════════════════╝"
+}
+
+display_player_skill_cards() {
+    echo "╔═══════════════════════════════════════════╗"
+    echo "║            PLAYER  SKILL CARDS            ║"
+    echo "╠═══════════════════════════════════════════╣"
+    printf "║  Skill Cards: %-27s ║\n" "$PLAYER_SKILL_CARDS"
+    echo "║  Type the command 'show_card [card name]' ║"
+    echo "║  to see the details of a skill card.      ║"
+    echo "╚═══════════════════════════════════════════╝"
+}
