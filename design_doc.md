@@ -99,6 +99,10 @@ You play as one of the few surviving ducks, driven by vengeance and determined t
 You begin the story at Whispering Waters
 
 An asteriod falls out of the sky and lands in the distance, radiating a magical aura. The ducks race towards the asteroid against the bears (and win; cannot advance if the duck loses the race). The ducks gain superpowers from the asteroid. 
+--> the player must complete some sort of task in order to win (TBD) 
+
+The ducks arrive at the bears fortress. It is LOCKED and you cannot enter without a passcode. 
+--> the player must complete a puzzle to obtain the passcode
 
 Ducks storm the Bear castle/fortress and fight for vengeance. 
 They progress through each floor, until reaching the boss bear on the top floor.
