@@ -126,5 +126,9 @@ sell_shop() {
 		read sell_action
 
 
-		for owned_item ${!PLAYER_ITEMS[@]}
+		for owned_item in "${!PLAYER_ITEMS[@]}"; do
+			echo "[$((owned_item + 1))] ${PLAYER_ITEMS[$owned_item]}"
+
+			
+		done
 }
