@@ -127,8 +127,12 @@ sell_shop() {
 
 
 		for owned_item in "${!PLAYER_ITEMS[@]}"; do
+			#loop through inventory
 			echo "[$((owned_item + 1))] ${PLAYER_ITEMS[$owned_item]}"
+			#get item id from inventory
 
+			#display item info
 			
+
 		done
 }
