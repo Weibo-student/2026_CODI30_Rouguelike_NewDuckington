@@ -1,4 +1,3 @@
-
 #!/bin/bash
 #put this inside the if player loses statement
 #feel free to change the spacing
