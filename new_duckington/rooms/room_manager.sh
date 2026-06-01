@@ -32,11 +32,9 @@ echo ${room_list[@]}
 
 declare -a ENEMY_LIST
 #ls $GAME_ROOT/data/enemies/
-for file in $GAME_ROOT/data/enemies/; do
-	echo $file
-	if [[ "$file" == 'ememy_example.sh' ]]; then
-		continue
-	fi
-	ENEMY_LIST+="${file%.sh}"
+for file in $GAME_ROOT/data/enemies/*; do
+    if [[ -f "$file" ]]; then
+        ENEMY_LIST+=("$(basename "$file")")
+    fi
 done
 echo ${ENEMY_LIST[@]}
