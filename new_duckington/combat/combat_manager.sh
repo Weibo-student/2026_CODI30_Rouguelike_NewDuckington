@@ -134,9 +134,8 @@ while [[ $battle_end == false ]]; do
 
 			echo -e "the enemy has ${current_enemy[atk]} damage and you have $PLAYER_DEF def"
 		    echo -e "you have taken $DAMAGE_TAKEN damage"
-		    echo $PLAYER_HP
+
 		    PLAYER_HP=$(($PLAYER_HP-$DAMAGE_TAKEN))
-		    echo $PLAYER_HP
 
 			if [[ $PLAYER_HP -lt 1 ]]; then
 			  	PLAYER_HP=0
