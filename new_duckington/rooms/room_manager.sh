@@ -39,7 +39,20 @@ declare -a floor_8
 declare -a floor_9
 declare -a floor_10
 
+
+initialize_rooms >> floor_1.txt
+initialize_rooms >> floor_2.txt
+initialize_rooms >> floor_3.txt
+initialize_rooms >> floor_4.txt
+initialize_rooms >> floor_5.txt
+initialize_rooms >> floor_6
+initialize_rooms >> floor_7
+initialize_rooms >> floor_8
+initialize_rooms >> floor_9
+initialize_rooms >> floor_10.txt
+
 # kind of raw code right now
+
 #=================================================================
 
 # #need to make a list of available enemies, 
