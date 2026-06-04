@@ -1,0 +1,51 @@
+"Loony" Bill Muscovski
+Role: Inventor / Support Hero
+Personality: Crafty, creative, unpredictable, resourceful.
+
+BACKGROUND:
+- Grew up repairing machines and building inventions.
+- Earned the nickname "Loony" because of his unusual ideas.
+- Lost family members during the war.
+- Often underestimated because of his eccentric personality.
+- Uses intelligence rather than brute strength.
+
+BEFORE POWERS:
+- Skilled engineer.
+- Expert inventor.
+- Excellent strategist.
+- Able to create tools from limited resources.
+
+BASE STATS:
+PLAYER_HP=100
+PLAYER_HP_MAX=100
+PLAYER_ATK=30
+PLAYER_DEF=8
+PLAYER_NRG=0
+PLAYER_NRG_MAX=50
+PLAYER_SPD=7
+PLAYER_LCK=2
+
+WEAPON:
+Given to him from the Asteroid:
+Cryo Stun Gun – Freezes targets instantly. When thawed, targets lose 30 HP.
+
+BASE POWER: 50%
+MAX POWER: 100%
+
+POWERS:
+- Freeze Shot
+- Cryo Trap
+- Ice Blast
+- Gadget Creation
+- Absolute Zero (Ultimate Ability)
+
+AFTER POWERS:
+- Enhances his inventions using asteroid technology.
+- Controls powerful freezing attacks.
+- Provides support and battlefield control for allies.
+
+GOALS:
+- End the war between ducks and bears.
+- Find the mastermind behind the conflict.
+- Avenge his family.
+- Use science to rebuild the world after the war.
